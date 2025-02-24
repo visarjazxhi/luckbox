@@ -195,83 +195,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Subscription Plans */}
-      {/* <section className="py-20 bg-gray-100 dark:bg-gray-900">
+      {/* Meet Your Coach Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-gray-800 dark:text-white text-center">
-            Training Plans
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                id: "basic",
-                name: "Basic",
-                price: "$49/month",
-                features: [
-                  "Core Strategy Videos",
-                  "Basic Hand Analysis",
-                  "Community Forum Access",
-                ],
-              },
-              {
-                id: "pro",
-                name: "Pro",
-                price: "$99/month",
-                features: [
-                  "Advanced Strategy Content",
-                  "Live Training Sessions",
-                  "1-on-1 Coaching Session",
-                  "Private Discord Channel",
-                ],
-              },
-              {
-                id: "elite",
-                name: "Elite",
-                price: "$199/month",
-                features: [
-                  "Custom Training Plan",
-                  "Weekly 1-on-1 Sessions",
-                  "Tournament Preparation",
-                  "24/7 Coach Access",
-                ],
-              },
-            ].map((plan) => (
-              <div
-                key={plan.id}
-                className={`p-8 rounded-lg ${
-                  plan.name === "Pro"
-                    ? "bg-[#3498db] text-white"
-                    : "bg-white dark:bg-gray-800 text-gray-800 dark:text-white"
-                }`}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">Meet Your Coach</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Learn from a seasoned professional with a proven track record in both live and online poker.
+            </p>
+          </motion.div>
+
+          <div className="flex flex-col lg:flex-row items-center justify-between">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="lg:w-1/2 mb-12 lg:mb-0"
+            >
+              <Image
+                src="/mentor.jpg"
+                alt="Your Poker Coach"
+                width={500}
+                height={500}
+                className="rounded-lg shadow-2xl"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="lg:w-1/2 lg:pl-12"
+            >
+              <h3 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white">Patrick &quot;LuckBox&quot; Barba</h3>
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
+                With over a decade of experience in professional poker, Patrick has honed his skills in both live and
+                online environments. His strategic insights and analytical approach have helped countless players
+                elevate their game.
+              </p>
+              <ul className="space-y-4 mb-8">
+                {[
+                  "WSOP Bracelet Winner",
+                  "Over $2 million in live tournament earnings",
+                  "Renowned cash game specialist",
+                  "Expert in GTO and exploitative play",
+                ].map((achievement, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center text-gray-600 dark:text-gray-300"
+                  >
+                    <span className="mr-2 text-[#3498db]">✓</span>
+                    {achievement}
+                  </motion.li>
+                ))}
+              </ul>
+              <Link
+                href="/book"
+                className="inline-block bg-[#3498db] text-white px-8 py-3 rounded font-semibold hover:bg-[#2980b9] transition-colors"
               >
-                <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
-                <p className="text-3xl font-bold mb-6">{plan.price}</p>
-                <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature) => (
-                    <li
-                      key={`${plan.id}-${feature}`}
-                      className="flex items-center"
-                    >
-                      <span className="mr-2">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/subscribe"
-                  className={`block text-center py-3 px-6 rounded font-semibold transition-colors ${
-                    plan.name === "Pro"
-                      ? "bg-white text-[#3498db] hover:bg-gray-100"
-                      : "bg-[#3498db] text-white hover:bg-[#2980b9]"
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
+                Book a Session
+              </Link>
+            </motion.div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
