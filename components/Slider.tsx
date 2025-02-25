@@ -112,7 +112,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                   {slides[currentSlide].subtitle}
                 </p>
                 <Link
-                  href="/subscribe"
+                  href="/book"
                   className="inline-block bg-[#3498db] text-white px-8 py-3 rounded font-semibold hover:bg-[#2980b9] transition-colors"
                 >
                   START TRAINING

@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="absolute inset-0 transform lg:skew-x-12 lg:-skew-y-6 scale-110 origin-top-right">
                   <div className="h-full w-full bg-gradient-to-br from-transparent to-black/20">
                     <Image
-                      src="/graph1.jpg"
+                      src="/graph2.jpg"
                       alt="Poker coaching and training"
                       fill
                       className="object-cover"
@@ -222,8 +222,8 @@ export default function Home() {
               <Image
                 src="/mentor.jpg"
                 alt="Your Poker Coach"
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 className="rounded-lg shadow-2xl"
               />
             </motion.div>

@@ -1,13 +1,12 @@
-"use client";
+"use client"
 
-import { Menu, X } from "lucide-react";
-
-import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
-import { useState } from "react";
+import Link from "next/link"
+import { useState } from "react"
+import { Menu, X } from "lucide-react"
+import ThemeToggle from "./ThemeToggle"
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className="bg-white dark:bg-black/80 backdrop-blur-sm text-gray-800 dark:text-white py-4 px-6 fixed w-full z-50">
@@ -19,35 +18,20 @@ const Header = () => {
           <Link href="/" className="hover:text-[#3498db] transition-colors">
             HOME
           </Link>
-          <Link
-            href="/training"
-            className="hover:text-[#3498db] transition-colors"
-          > 
+          <Link href="/training" className="hover:text-[#3498db] transition-colors">
             TRAINING
           </Link>
-          <Link
-            href="/about"
-            className="hover:text-[#3498db] transition-colors"
-          >
+          <Link href="/about" className="hover:text-[#3498db] transition-colors">
             ABOUT
           </Link>
-          <Link
-            href="/services"
-            className="hover:text-[#3498db] transition-colors"
-          >
-            SERVICES
-          </Link>
-          <Link
-            href="/contact"
-            className="hover:text-[#3498db] transition-colors"
-          >
+          <Link href="/contact" className="hover:text-[#3498db] transition-colors">
             CONTACT
           </Link>
-          <Link
-            href="/subscribe"
-            className="bg-[#3498db] text-white px-4 py-2 rounded hover:bg-[#2980b9] transition-colors"
-          >
-            START TRAINING
+          <Link href="/pricing" className="hover:text-[#3498db] transition-colors">
+            PRICING
+          </Link>
+          <Link href="/book" className="bg-[#3498db] text-white px-4 py-2 rounded hover:bg-[#2980b9] transition-colors">
+            BOOK NOW
           </Link>
           <ThemeToggle />
         </nav>
@@ -63,34 +47,29 @@ const Header = () => {
           <Link href="/" className="hover:text-[#3498db] transition-colors">
             HOME
           </Link>
-          <Link
-            href="/training"
-            className="hover:text-[#3498db] transition-colors"
-          >
+          <Link href="/training" className="hover:text-[#3498db] transition-colors">
             TRAINING
           </Link>
-          <Link
-            href="/about"
-            className="hover:text-[#3498db] transition-colors"
-          >
+          <Link href="/about" className="hover:text-[#3498db] transition-colors">
             ABOUT
           </Link>
-          <Link
-            href="/contact"
-            className="hover:text-[#3498db] transition-colors"
-          >
+          <Link href="/contact" className="hover:text-[#3498db] transition-colors">
             CONTACT
           </Link>
+          <Link href="/pricing" className="hover:text-[#3498db] transition-colors">
+            PRICING
+          </Link>
           <Link
-            href="/subscribe"
+            href="/book"
             className="bg-[#3498db] text-white px-4 py-2 rounded hover:bg-[#2980b9] transition-colors inline-block"
           >
-            START TRAINING
+            BOOK NOW
           </Link>
         </nav>
       )}
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
+

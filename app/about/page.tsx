@@ -6,7 +6,7 @@ export default function About() {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center">
-        <Image src="/about-hero.jpg" alt="Poker table" fill className="object-cover" priority />
+        <Image src="/about.jpg" alt="Poker table" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">About LuckBox Poker</h1>
@@ -20,10 +20,10 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <Image
-                src="/mentor.png"
-                alt="John Doe - Poker Coach"
-                width={400}
-                height={400}
+                src="/mentor2.png"
+                alt="Patrick Barba - Poker Coach"
+                width={500}
+                height={500}
                 className="rounded-lg shadow-xl"
               />
             </div>

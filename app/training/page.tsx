@@ -58,7 +58,7 @@ export default function Training() {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
-        <Image src="/training-hero.jpg" alt="Poker training session" fill className="object-cover" priority />
+        <Image src="/training.jpg" alt="Poker training session" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">LuckBox Training Programs</h1>
@@ -137,25 +137,25 @@ export default function Training() {
                 title: "Live Online Workshops",
                 description:
                   "Participate in interactive sessions led by poker pros, with real-time Q&A and hand analysis.",
-                image: "/live-workshop.jpg",
+                image: "/live/1.jpg",
               },
               {
                 title: "On-Demand Video Lessons",
                 description:
                   "Access a library of in-depth video lessons covering various poker topics, available 24/7.",
-                image: "/video-lessons.jpg",
+                image: "/live/2.jpg",
               },
               {
                 title: "One-on-One Coaching",
                 description:
                   "Get personalized guidance and feedback from experienced coaches to rapidly improve your game.",
-                image: "/one-on-one-coaching.jpg",
+                image: "/live/3.jpg",
               },
               {
                 title: "Practice Tournaments",
                 description:
                   "Apply your skills in simulated tournament environments with post-game analysis and feedback.",
-                image: "/practice-tournament.jpg",
+                image: "/live/4.jpg",
               },
             ].map((method, index) => (
               <motion.div
