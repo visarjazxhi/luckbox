@@ -55,7 +55,7 @@ export default function Book() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      {/* <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">What Our Students Say</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -102,10 +102,10 @@ export default function Book() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-100 dark:bg-gray-800">
+      {/* <section className="py-20 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
             Frequently Asked Questions
@@ -147,7 +147,7 @@ export default function Book() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 bg-blue-600 dark:bg-blue-800">
