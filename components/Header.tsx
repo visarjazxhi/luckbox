@@ -22,7 +22,7 @@ const Header = () => {
           <Link
             href="/training"
             className="hover:text-[#3498db] transition-colors"
-          >
+          > 
             TRAINING
           </Link>
           <Link
@@ -30,6 +30,12 @@ const Header = () => {
             className="hover:text-[#3498db] transition-colors"
           >
             ABOUT
+          </Link>
+          <Link
+            href="/services"
+            className="hover:text-[#3498db] transition-colors"
+          >
+            SERVICES
           </Link>
           <Link
             href="/contact"
